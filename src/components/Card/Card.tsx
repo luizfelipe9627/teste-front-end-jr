@@ -1,7 +1,7 @@
 import styles from "./Card.module.scss";
 import React from "react";
 import { Button } from "../Button/Button";
-import Carousel from "../Carousel/Carousel";
+import CarouselCard from "./CarouselCard";
 
 interface Product {
   id: number;
@@ -31,7 +31,7 @@ export default function Card() {
   }, []);
 
   return (
-    <Carousel>
+    <CarouselCard>
       {data.map((item, index) => (
         <div key={index} className={styles.card}>
           <div className={styles.image}>
@@ -48,6 +48,6 @@ export default function Card() {
           </div>
         </div>
       ))}
-    </Carousel>
+    </CarouselCard>
   );
 }
