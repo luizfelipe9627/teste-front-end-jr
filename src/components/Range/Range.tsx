@@ -1,8 +1,8 @@
 import styles from "./Range.module.scss";
 import RangeText from "./RangeData";
-import escudo from "../../assets/svg/ShieldCheck.svg";
-import caminhao from "../../assets/svg/Truck.svg";
-import cartao from "../../assets/svg/CreditCard.svg";
+import escudo from "../../assets/svg/shieldCheck.svg";
+import caminhao from "../../assets/svg/truck.svg";
+import cartao from "../../assets/svg/creditCard.svg";
 
 export default function Range() {
   return (

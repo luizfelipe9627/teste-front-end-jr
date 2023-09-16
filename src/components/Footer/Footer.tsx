@@ -1,20 +1,20 @@
 import styles1 from "./Footer.module.scss";
 import ListNav from "../ListNav/ListNav";
-import facebook from "../../assets/svg/Facebook.svg";
-import instagram from "../../assets/svg/Instagram.svg";
-import youtube from "../../assets/svg/Youtube.svg";
-import visa from "../../assets/svg/Visa.svg";
-import elo from "../../assets/svg/Elo.svg";
-import alelo from "../../assets/svg/Alelo.svg";
-import dinners from "../../assets/svg/Dinners.svg";
-import ifood from "../../assets/svg/Ifood.svg";
-import mastercard from "../../assets/svg/Mastercard.svg";
-import pix from "../../assets/svg/Pix.svg";
-import amex from "../../assets/svg/Amex.svg";
-import ticket from "../../assets/svg/Ticket.svg";
-import sodexo from "../../assets/svg/Sodexo.svg";
+import facebook from "../../assets/svg/facebook.svg";
+import instagram from "../../assets/svg/instagram.svg";
+import youtube from "../../assets/svg/youtube.svg";
+import visa from "../../assets/svg/visa.svg";
+import elo from "../../assets/svg/elo.svg";
+import alelo from "../../assets/svg/alelo.svg";
+import dinners from "../../assets/svg/dinners.svg";
+import ifood from "../../assets/svg/ifood.svg";
+import mastercard from "../../assets/svg/mastercard.svg";
+import pix from "../../assets/svg/pix.svg";
+import amex from "../../assets/svg/amex.svg";
+import ticket from "../../assets/svg/ticket.svg";
+import sodexo from "../../assets/svg/sodexo.svg";
 import Newsletter from "../Newsletter/Newsletter";
-import vtexIcon from "../../assets/svg/vtexIcon.svg";
+import vtex from "../../assets/svg/vtexIcon.svg";
 import econverse from "../../assets/svg/econverse.svg";
 import Copyright from "../Copyright/Copyright";
 
@@ -89,7 +89,7 @@ export default function Footer() {
         <Copyright
           text="Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
           É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização."
-          img={[econverse, vtexIcon]}
+          img={[econverse, vtex]}
           alt={["Econverse", "Vtex"]}
           href={["#econverse", "#vtex"]}
         />

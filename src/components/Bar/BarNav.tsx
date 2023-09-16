@@ -1,5 +1,5 @@
 import styles from "./BarNav.module.scss";
-import crown from "../../assets/svg/CrownSimple.svg";
+import crown from "../../assets/svg/crownSimple.svg";
 
 export default function BarNav() {
   return (
