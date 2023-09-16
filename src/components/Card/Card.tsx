@@ -44,7 +44,7 @@ export default function Card() {
             <p className={styles.discountPrice}>R$ {item.price}</p>
             <p className={styles.installment}>ou 2x de R$49,95 sem juros</p>
             <p className={styles.delivery}>Frete grátis</p>
-            <Button showButton={true} textButton="Comprar" />
+            <Button>Comprar</Button>
           </div>
         </div>
       ))}

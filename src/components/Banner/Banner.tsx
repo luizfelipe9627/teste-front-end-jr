@@ -8,7 +8,6 @@ export default function Banner() {
         title="Venha conhecer nossas promoções"
         description="50% Off nos produtos"
         img={banner}
-        showButton={true}
         textButton="Ver produto"
       />
     </section>
