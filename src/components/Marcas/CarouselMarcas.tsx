@@ -1,8 +1,5 @@
 import Slider from "react-slick";
 
-import "../../../node_modules/slick-carousel/slick/slick.scss";
-import "../../../node_modules/slick-carousel/slick/slick-theme.scss";
-
 interface CarouselMarcasProps {
   children: React.ReactNode;
 }
