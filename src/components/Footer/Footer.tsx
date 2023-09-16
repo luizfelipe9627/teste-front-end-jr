@@ -1,5 +1,3 @@
-import styles1 from "./Footer.module.scss";
-import ListNav from "../ListNav/ListNav";
 import facebook from "../../assets/svg/facebook.svg";
 import instagram from "../../assets/svg/instagram.svg";
 import youtube from "../../assets/svg/youtube.svg";
@@ -16,12 +14,14 @@ import sodexo from "../../assets/svg/sodexo.svg";
 import Newsletter from "../Newsletter/Newsletter";
 import vtex from "../../assets/svg/vtexIcon.svg";
 import econverse from "../../assets/svg/econverse.svg";
+import styles from "./Footer.module.scss";
+import ListNav from "../ListNav/ListNav";
 import Copyright from "../Copyright/Copyright";
 
 export default function Footer() {
   return (
-    <footer className={styles1.footer}>
-      <div className={styles1.top}>
+    <footer className={styles.footer}>
+      <div className={styles.top}>
         <ListNav
           title="Sobre nós"
           liText={["Conheça", "Como comprar", "Indicação e desconto"]}
@@ -85,7 +85,7 @@ export default function Footer() {
         />
       </div>
 
-      <div className={styles1.bottom}>
+      <div className={styles.bottom}>
         <Copyright
           text="Copyright © 2019. Todos os direitos reservados. Todas as marcas e suas imagens são de propriedade de seus respectivos donos.  
           É vedada a reprodução, total ou parcial, de qualquer conteúdo sem expressa autorização."

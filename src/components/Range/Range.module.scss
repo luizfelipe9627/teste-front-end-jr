@@ -1,5 +1,28 @@
+.rangeData {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 6px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  p {
+    display: flex;
+    color: #9F9F9F;
+    font-weight: 500;
+    font-size: 12px;
+
+    span {
+      margin: 0 5px;
+      color: #F71963;
+      font-weight: 600;
+    }
+  }
+}
+
 .range {
   display: flex;
   justify-content: space-evenly;
-  padding: 6px;
 }

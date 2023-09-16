@@ -1,7 +1,7 @@
+import vtex from "../../assets/svg/vtex.svg";
 import Title from "../Title/Title";
 import CarouselMarcas from "./CarouselMarcas";
 import styles from "./Marcas.module.scss";
-import vtex from "../../assets/svg/vtex.svg";
 
 export default function Marcas() {
   const marcas = [];
