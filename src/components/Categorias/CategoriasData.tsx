@@ -6,14 +6,13 @@ interface CategoriasDataProps {
   active?: boolean;
 }
 
-export default function CategoriasData({ ...props }: CategoriasDataProps) {
+export default function CategoriasData(props: CategoriasDataProps) {
   return (
-    <ul
-      className={`${styles.categoriasData} ${
-        props.active ? styles.active : ""
-      }`}
-    >
-      <li>
+      <li
+        className={`${styles.categoriasData} ${
+          props.active ? styles.active : ""
+        }`}
+      >
         {props.img && (
           <button className={styles.container}>
             <img src={props.img} alt={props.title} />
@@ -22,6 +21,5 @@ export default function CategoriasData({ ...props }: CategoriasDataProps) {
 
         {props.title && <h2>{props.title}</h2>}
       </li>
-    </ul>
   );
 }

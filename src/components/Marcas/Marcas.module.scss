@@ -1,0 +1,19 @@
+.marcas {
+  display: flex !important;
+
+  .container {
+    margin: 60px 0 95px 0;
+    display: flex;
+    width: 211px;
+    height: 211px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.13);
+  
+    img {
+      max-width: 172px;
+    }
+  }
+}
+
+
+
