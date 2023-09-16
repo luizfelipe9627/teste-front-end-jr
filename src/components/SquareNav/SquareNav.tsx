@@ -1,7 +1,7 @@
-import NavData, { NavDataProps } from "./NavData";
+import SquareNavData, { SquareNavDataProps } from "./SquareNavData";
 
 export default function Nav() {
-  const titles: NavDataProps[] = [
+  const titles: SquareNavDataProps[] = [
     { title: "Celular", href: "/#celular", active: true },
     { title: "Acessórios", href: "/#acessorios" },
     { title: "Tablets", href: "/#tablets" },
@@ -10,5 +10,5 @@ export default function Nav() {
     { title: "Ver todos", href: "/#ver-todos" },
   ];
 
-  return <NavData titles={titles} />;
+  return <SquareNavData titles={titles} />;
 }

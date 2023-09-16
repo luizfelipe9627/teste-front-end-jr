@@ -1,12 +1,12 @@
-import styles from "./NavData.module.scss";
+import styles from "./SquareNav.module.scss";
 
-export interface NavDataProps {
+export interface SquareNavDataProps {
   title: string;
   href: string;
   active?: boolean;
 }
 
-export default function NavData(props: { titles: NavDataProps[] }) {
+export default function SquareNavData(props: { titles: SquareNavDataProps[] }) {
   return (
     <nav className={styles.navData}>
       <ul className={styles.ul}>
