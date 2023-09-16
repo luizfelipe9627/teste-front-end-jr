@@ -1,24 +1,24 @@
-import styles from "./Produtos.module.scss";
+import styles from "./Product.module.scss";
 import Button from "../Button/Button";
-import produto from "../../assets/img/produto.png";
+import product from "../../assets/img/produto.png";
 import Title from "../Title/Title";
 
-interface ProdutosDataProps {
+interface ProductDataProps {
   title?: string;
   description?: string;
   textButton?: string;
   img: string;
 }
 
-export function ProdutosData({
+export function ProductData({
   title,
   description,
   textButton,
   img,
-}: ProdutosDataProps) {
+}: ProductDataProps) {
   return (
     <div
-      className={styles.produtosData}
+      className={styles.productData}
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className={styles.text}>
@@ -30,9 +30,9 @@ export function ProdutosData({
   );
 }
 
-export default function Produto() {
+export default function Product() {
   return (
-    <section className={styles.produtos}>
+    <section className={styles.product}>
       <Title
         title="Produtos relacionados"
         titleLink="Ver todos"
@@ -40,17 +40,17 @@ export default function Produto() {
         lines
       />
       <div className={styles.container}>
-        <ProdutosData
+        <ProductData
           title="Produtos"
           description="Lorem ipsum dolor sit amet, consectetur"
           textButton="Confira"
-          img={produto}
+          img={product}
         />
-        <ProdutosData
+        <ProductData
           title="Produtos"
           description="Lorem ipsum dolor sit amet, consectetur"
           textButton="Confira"
-          img={produto}
+          img={product}
         />
       </div>
     </section>

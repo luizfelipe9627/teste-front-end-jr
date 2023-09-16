@@ -1,18 +1,18 @@
-import styles from "./Parceiros.module.scss";
+import styles from "./Partner.module.scss";
 import Button from "../Button/Button";
-import parceiro from "../../assets/img/parceiro.png";
+import partner from "../../assets/img/parceiro.png";
 
-interface ParceirosDataProps {
+interface PartnersDataProps {
   title?: string;
   description?: string;
   textButton?: string;
   img: string;
 }
 
-export function ParceirosData({ title, description, textButton, img }: ParceirosDataProps) {
+export function PartnersData({ title, description, textButton, img }: PartnersDataProps) {
   return (
     <div
-      className={styles.parceirosData}
+      className={styles.partnersData}
       style={{ backgroundImage: `url(${img})` }}
     >
       <div className={styles.text}>
@@ -24,20 +24,20 @@ export function ParceirosData({ title, description, textButton, img }: Parceiros
   );
 }
 
-export default function Parceiros() {
+export default function Partners() {
   return (
-    <section className={styles.parceiros}>
-      <ParceirosData
+    <section className={styles.partners}>
+      <PartnersData
         title="Parceiros"
         description="Lorem ipsum dolor sit amet, consectetur"
         textButton="Confira"
-        img={parceiro}
+        img={partner}
       />
-      <ParceirosData
+      <PartnersData
         title="Parceiros"
         description="Lorem ipsum dolor sit amet, consectetur"
         textButton="Confira"
-        img={parceiro}
+        img={partner}
       />
     </section>
   );
