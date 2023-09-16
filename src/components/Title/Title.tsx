@@ -3,22 +3,22 @@ import styles from "./Title.module.scss";
 interface TitleProps {
   title: string;
   titleLink?: string;
-  href?: string;
+  aHref?: string;
   lines?: boolean;
 }
 
-export default function Title(props: TitleProps) {
+export default function Title({ title, titleLink, aHref, lines }: TitleProps) {
   return (
     <div className={styles.title}>
       <div className={styles.text}>
-        {props.lines && <span></span>}
-        <h1>{props.title}</h1>
-        {props.lines && <span></span>}
+        {lines && <span></span>}
+        <h1>{title}</h1>
+        {lines && <span></span>}
       </div>
 
-      {props.titleLink && (
+      {titleLink && (
         <div className={styles.link}>
-          <a href={props.href}>{props.titleLink}</a>
+          <a href={aHref}>{titleLink}</a>
         </div>
       )}
     </div>

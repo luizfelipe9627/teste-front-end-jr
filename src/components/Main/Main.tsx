@@ -1,5 +1,5 @@
 import Banner from "../Banner/Banner";
-import Categorias from "../Categorias/Categorias";
+import Categorias from "../Categoria/Categoria";
 import Parceiros from "../Parceiros/Parceiros";
 import Vitrine from "../Vitrine/Vitrine";
 import Produtos from "../Produtos/Produtos";

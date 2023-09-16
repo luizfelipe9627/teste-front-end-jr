@@ -2,9 +2,9 @@ import styles from "./Copyright.module.scss";
 
 interface CopyrightProps {
   text: string;
-  img?: string[];
-  alt?: string[];
-  href?: string[];
+  img?: Array<string>;
+  alt?: Array<string>;
+  href?: Array<string>;
 }
 
 export default function Copyright({ ...props }: CopyrightProps) {

@@ -2,10 +2,10 @@ import styles from "./ListNav.module.scss";
 
 interface ListNavProps {
   title?: string;
-  liText?: string[];
-  liHref?: string[];
-  img?: string[];
-  imgHref?: string[];
+  liText?: Array<string>;
+  liHref?: Array<string>;
+  img?: Array<string>;
+  imgHref?: Array<string>;
   className?: string;
 }
 

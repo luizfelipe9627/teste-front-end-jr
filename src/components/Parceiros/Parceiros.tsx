@@ -1,5 +1,5 @@
 import styles from "./Parceiros.module.scss";
-import { Button } from "../Button/Button";
+import Button from "../Button/Button";
 import parceiro from "../../assets/img/parceiro.png";
 
 interface ParceirosDataProps {
@@ -9,16 +9,16 @@ interface ParceirosDataProps {
   img: string;
 }
 
-export function ParceirosData({ ...props }: ParceirosDataProps) {
+export function ParceirosData({ title, description, textButton, img }: ParceirosDataProps) {
   return (
     <div
       className={styles.parceirosData}
-      style={{ backgroundImage: `url(${props.img})` }}
+      style={{ backgroundImage: `url(${img})` }}
     >
       <div className={styles.text}>
-        {props.title && <h1>{props.title}</h1>}
-        {props.description && <p>{props.description}</p>}
-        {props.textButton && <Button>{props.textButton}</Button>}
+        {title && <h1>{title}</h1>}
+        {description && <p>{description}</p>}
+        {textButton && <Button>{textButton}</Button>}
       </div>
     </div>
   );

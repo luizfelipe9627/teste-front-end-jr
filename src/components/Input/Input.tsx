@@ -1,15 +1,15 @@
 import styles from "./Input.module.scss";
 
 interface InputProps {
-  type: string;
+  type?: string;
   placeholder: string;
-  id: string;
-  name: string;
+  id?: string;
+  name?: string;
   label?: string;
   required?: boolean;
 }
 
-export function Input({
+export default function Input({
   type,
   placeholder,
   id,

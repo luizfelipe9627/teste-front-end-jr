@@ -1,7 +1,7 @@
-import styles from "./Card.module.scss";
 import React from "react";
-import { Button } from "../Button/Button";
+import Button from "../Button/Button";
 import CarouselCard from "./CarouselCard";
+import styles from "./Card.module.scss";
 
 interface Product {
   id: number;

@@ -5,7 +5,7 @@ import box from "../../assets/svg/box.svg";
 import heart from "../../assets/svg/heart.svg";
 import user from "../../assets/svg/userCircle.svg";
 import cart from "../../assets/svg/shoppingCart.svg";
-import { Input } from "../Input/Input";
+import Input from "../Input/Input";
 
 export default function BarVtex() {
   return (
