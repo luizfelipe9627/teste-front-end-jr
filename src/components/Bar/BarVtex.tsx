@@ -23,7 +23,7 @@ export default function BarVtex() {
           required
         />
         <button>
-          <img src={search} alt="" />
+          <img src={search} alt="Lupa de pesquisa" />
         </button>
       </form>
 

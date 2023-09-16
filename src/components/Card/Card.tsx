@@ -35,7 +35,7 @@ export default function Card() {
       {data.map((item, index) => (
         <div key={index} className={styles.card}>
           <div className={styles.image}>
-            <img src={item.photo} alt="" />
+            <img src={item.photo} alt={item.productName} />
           </div>
 
           <div className={styles.info}>
