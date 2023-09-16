@@ -1,0 +1,15 @@
+.footer {
+  background-color: #2A2A2A;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 60px 0 42px 0;
+  }
+
+  .bottom {
+    border-top: 1px solid #fff;
+  }
+}

@@ -1,0 +1,38 @@
+.listNav {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+
+    &:last-child{
+      text-transform: lowercase;
+    }
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #fff;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 70px;
+    gap: 20px;
+  }
+}
