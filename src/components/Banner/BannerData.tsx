@@ -6,7 +6,6 @@ interface BannerDataProps {
   title?: string;
   description?: string;
   textButton?: string;
-  showButton?: boolean;
 }
 
 export function BannerData({ ...props }: BannerDataProps) {
@@ -15,15 +14,12 @@ export function BannerData({ ...props }: BannerDataProps) {
       className={styles.banner}
       style={{ backgroundImage: `url(${props.img})` }}
     >
-      {props.title || props.description || props.showButton ? (
+      {props.title || props.description || props.textButton ? (
         <div className={styles.text}>
           {props.title && <h1>{props.title}</h1>}
           {props.description && <p>{props.description}</p>}
-          {props.showButton && (
-            <Button
-              textButton={props.textButton}
-              showButton={props.showButton}
-            />
+          {props.textButton && (
+            <Button>{props.textButton}</Button>
           )}
         </div>
       ) : null}

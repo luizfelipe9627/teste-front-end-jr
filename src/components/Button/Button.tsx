@@ -1,12 +1,11 @@
 import styles from "./Button.module.scss";
 
 interface ButtonProps {
-  textButton?: string;
-  showButton?: boolean;
+  children?: React.ReactNode;
 }
 
-export function Button({ textButton, showButton }: ButtonProps) {
-  return showButton ? (
-    <button className={styles.button}>{textButton}</button>
+export function Button({ children }: ButtonProps) {
+  return children ? (
+    <button className={styles.button}>{children}</button>
   ) : null;
 }
