@@ -1,19 +1,19 @@
 import Banner from "../Banner/Banner";
-import Categorias from "../Categoria/Categoria";
-import Parceiros from "../Parceiros/Parceiros";
-import Vitrine from "../Vitrine/Vitrine";
-import Produtos from "../Produtos/Produtos";
-import Marcas from "../Marcas/Marcas";
+import Category from "../Category/Category";
+import Partner from "../Partner/Partner";
+import Showcase from "../Showcase/Showcase";
+import Product from "../Product/Product";
+import Brand from "../Brand/Brand";
 
 export default function Main() {
   return (
     <main>
       <Banner />
-      <Categorias />
-      <Vitrine />
-      <Parceiros />
-      <Produtos />
-      <Marcas />
+      <Category />
+      <Showcase />
+      <Partner />
+      <Product />
+      <Brand />
     </main>
   );
 }

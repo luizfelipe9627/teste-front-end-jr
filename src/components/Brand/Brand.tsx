@@ -1,13 +1,13 @@
 import vtex from "../../assets/svg/vtex.svg";
 import Title from "../Title/Title";
-import CarouselMarcas from "./CarouselMarcas";
-import styles from "./Marcas.module.scss";
+import CarouselBrand from "./CarouselBrand";
+import styles from "./Brand.module.scss";
 
-export default function Marcas() {
-  const marcas = [];
+export default function Brand() {
+  const brand = [];
   for (let i = 0; i < 10; i++) {
-    marcas.push(
-      <div key={i} className={styles.marcas}>
+    brand.push(
+      <div key={i} className={styles.brand}>
         <div className={styles.container}>
           <img src={vtex} alt="Vtex" />
         </div>
@@ -18,7 +18,7 @@ export default function Marcas() {
   return (
     <section>
       <Title title="Navegue por marcas" />
-      <CarouselMarcas>{marcas}</CarouselMarcas>
+      <CarouselBrand>{brand}</CarouselBrand>
     </section>
   );
 }

@@ -1,11 +1,11 @@
-.produtosData {
-  width: 590px;
-  height: 282px;
+.partnersData {
+  width: 574px;
+  height: 350px;
   position: relative;
   color: #fff;
   overflow: hidden;
   background-size: cover;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 20px;
 
   &::before {
     content: "";
@@ -21,7 +21,7 @@
   .text {
     padding: 40px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 90vw;
@@ -50,9 +50,9 @@
   }
 }
 
-.container {
+.partners {
   display: flex;
   justify-content: space-between;
   max-width: 90vw;
-  margin: 90px auto 80px auto;
+  margin: 70px auto 60px auto;
 }
