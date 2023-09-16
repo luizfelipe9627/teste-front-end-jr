@@ -81,7 +81,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: -25px;
     }
     &:before {
-        content: url('./../../../src/assets/svg/Prev.svg');
+        content: url('./../../../src/assets/svg/prev.svg');
     }
 }
 
@@ -92,7 +92,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: auto;
     }
     &:before {
-        content: url('./../../../src/assets/svg/Next.svg');
+        content: url('./../../../src/assets/svg/next.svg');
     }
 }
 
@@ -103,7 +103,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: -25px;
     }
     &:before {
-        content: url('./../../../src/assets/svg/ArrowRight.svg');
+        content: url('./../../../src/assets/svg/arrowRight.svg');
     }
 }
 
@@ -114,7 +114,7 @@ $slick-opacity-not-active: 0.25 !default;
         right: auto;
     }
     &:before {
-        content: url('./../../../src/assets/svg/ArrowLeft.svg');
+        content: url('./../../../src/assets/svg/arrowLeft.svg');
     }
 }
 
