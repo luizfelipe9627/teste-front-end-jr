@@ -1,0 +1,121 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    display: flex;
+    background-color: #fff;
+    padding: 2.5rem 3.5rem;
+    position: relative;
+
+    .image {
+      margin-right: 5.4375rem;
+    }
+
+    .buttonClose {
+      position: absolute;
+      top: 0.9375rem;
+      right: 0.9375rem;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      img {
+        width: 1.5625rem;
+        height: 1.5625rem;
+      }
+    }
+
+    .content {
+      position: relative;
+
+      .title {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.25rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .price {
+        display: block;
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 1.25rem;
+        font-weight: 900;
+        line-height: 1.25rem;
+        letter-spacing: 0.05em;
+        margin: 1.25rem 0 1.0625rem 0;
+      }
+
+      .description {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 0.9375rem;
+        letter-spacing: 0.05em;
+        margin: 1.0625rem 0 1.5625rem 0;
+      }
+
+      .link {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 0.75rem;
+        letter-spacing: 0.05em;
+      }
+
+      .count {
+        width: 6.875rem;
+        height: 2.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0.0625rem solid #041e50;
+        border-radius: 0.0625rem;
+        margin: 1rem 0;
+        padding: 0.5rem 0.625rem;
+
+        .decrease, .increase {
+          display: flex;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+
+        .amount {
+          max-width: 100%;
+        }
+
+        img {
+          display: initial;
+        }
+      }
+
+      .comprar {
+        width: 15.3125rem;
+        height: 2.75rem;
+        font-size: 0.875rem;
+        font-weight: 700;
+        line-height: 1.3125rem;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}

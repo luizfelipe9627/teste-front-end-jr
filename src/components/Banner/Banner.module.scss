@@ -1,0 +1,47 @@
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 24.375rem;
+  overflow: hidden;
+  color: #fff;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 85.04%);
+    opacity: 0.8;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    width: 100%;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      max-width: 20ch;
+    }
+
+    p {
+      font-size: 2.25rem;
+      font-weight: 600;
+    }
+
+    button {
+      width: 14.1875rem;
+      height: 3.75rem;
+      font-size: 1.125rem;
+      margin-top: 2.1875rem;
+      border-radius: 0.3125rem;
+    }
+  }
+}

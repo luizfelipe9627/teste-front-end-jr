@@ -1,0 +1,39 @@
+.barNav {
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(57, 48, 19, 0.12);
+  padding: 0.75rem 3.5rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      display: flex;
+      align-items: center;
+
+      a {
+        color: #9f9f9f;
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        a {
+          color: #f71963;
+        }
+      }
+    }
+
+    .active {
+      a {
+        color: #f71963;
+      }
+    }
+
+    img {
+      margin-right: 0.75rem;
+    }
+  }
+}

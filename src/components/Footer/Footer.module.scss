@@ -1,0 +1,16 @@
+.footer {
+  background-color: #2A2A2A;
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 3.75rem 0 2.625rem 0;
+  }
+
+  .bottom {
+    border-top: 0.0625rem solid #fff;
+  }
+}
