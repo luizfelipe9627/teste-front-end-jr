@@ -1,6 +1,6 @@
 .squareNav {
   max-width: 90vw;
-  margin: 5px auto 20px auto;
+  margin: 0.3125rem auto 1.25rem auto;
 
   .ul {
     display: grid;
@@ -8,13 +8,13 @@
     text-align: center;
 
     .li {
-      padding: 12px 0;
-      border: 1px solid #BDBDBD;
+      padding: 0.75rem 0;
+      border: 0.0625rem solid #BDBDBD;
 
       a {
         text-transform: uppercase;
         color: #3B3B3B;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight:500;
 
         &:hover {

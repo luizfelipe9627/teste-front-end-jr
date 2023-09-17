@@ -1,11 +1,11 @@
 .productData {
-  width: 590px;
-  height: 282px;
+  width: 36.875rem;
+  height: 17.625rem;
   position: relative;
   color: #fff;
   overflow: hidden;
   background-size: cover;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0rem 0rem 0.625rem 0.625rem;
 
   &::before {
     content: "";
@@ -19,7 +19,7 @@
   }
 
   .text {
-    padding: 40px;
+    padding: 2.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,23 +28,23 @@
     width: 100%;
 
     h1 {
-      font-size: 40px;
+      font-size: 2.5rem;
       font-weight: 700;
     }
   
     p {
-      margin-top: 8px;
-      font-size: 16px;
+      margin-top: 0.5rem;
+      font-size: 1rem;
       font-weight: 400;
       max-width: 18ch;
     }
 
     button {
-      width: 131px;
-      height: 48px;
-      font-size: 16px;
-      margin-top: 32px;
-      border-radius: 10px;
+      width: 8.1875rem;
+      height: 3rem;
+      font-size: 1rem;
+      margin-top: 2rem;
+      border-radius: 0.625rem;
       font-weight: 900;
     }
   }
@@ -52,8 +52,7 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 90vw;
-  margin: 90px auto 80px auto;
+  margin: 5.625rem auto 5rem auto;
 }

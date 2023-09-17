@@ -1,5 +1,3 @@
-import styles from "./Input.module.scss";
-
 interface InputProps {
   type?: string;
   placeholder: string;
@@ -18,7 +16,7 @@ export default function Input({
   ...props
 }: InputProps) {
   return (
-    <div className={styles.input}>
+    <div>
       <label htmlFor={name}>{label}</label>
 
       <input
