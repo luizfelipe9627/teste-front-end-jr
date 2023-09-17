@@ -52,6 +52,7 @@
 
 .partners {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 90vw;
   margin: 70px auto 60px auto;
