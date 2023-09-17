@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100vw;
-  height: 390px;
+  height: 24.375rem;
   overflow: hidden;
   color: #fff;
   background-size: cover;
@@ -26,22 +26,22 @@
     width: 100%;
 
     h1 {
-      font-size: 48px;
+      font-size: 3rem;
       font-weight: 600;
       max-width: 20ch;
     }
 
     p {
-      font-size: 36px;
+      font-size: 2.25rem;
       font-weight: 600;
     }
 
     button {
-      width: 227px;
-      height: 60px;
-      font-size: 18px;
-      margin-top: 35px;
-      border-radius: 5px;
+      width: 14.1875rem;
+      height: 3.75rem;
+      font-size: 1.125rem;
+      margin-top: 2.1875rem;
+      border-radius: 0.3125rem;
     }
   }
 }

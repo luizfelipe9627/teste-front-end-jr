@@ -1,30 +1,30 @@
 .barVtex {
-  padding: 12px 56px;
+  padding: 0.75rem 3.5rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #F0F0F0;
+  border: 0.0625rem solid #F0F0F0;
   border-left: none;
   border-right: none;
 
   .form {
     position: relative;
     input {
-      width: 657px;
-      padding: 14px 24px;
-      border-radius: 10px;
+      width: 41.0625rem;
+      padding: 0.875rem 1.5rem;
+      border-radius: 0.625rem;
       background-color: #F6F5F2;
       border: none;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-family: "Poppins";
       font-weight: 500;
     }
 
     button {
       position: absolute;
-      top: 9px;
-      right: 24px;
+      top: 0.5625rem;
+      right: 1.5rem;
       background-color: transparent;
       border: none;
     }
@@ -37,7 +37,7 @@
     justify-content: space-between;
     
     a:not(:first-child) {
-      margin-left: 32px;
+      margin-left: 2rem;
     }
   }
 }
