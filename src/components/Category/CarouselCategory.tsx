@@ -1,10 +1,10 @@
 import Slider from "react-slick";
 
-interface CarouselCategoryProps {
+interface CarouselCategoriasProps {
   children: React.ReactNode;
 }
 
-export default function CarouselCategory({ children }: CarouselCategoryProps) {
+export default function CarouselCategorias({ children }: CarouselCategoriasProps) {
   const settings = {
     dots: false,
     infinite: false,
@@ -12,7 +12,7 @@ export default function CarouselCategory({ children }: CarouselCategoryProps) {
     slidesToScroll: 7,
   };
   return (
-    <Slider {...settings} className="category">
+    <Slider {...settings} className="categorias">
       {children}
     </Slider>
   );
