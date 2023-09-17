@@ -1,31 +1,28 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End Jr
+## Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-### Vem ser #Econverse!
+### O teste consiste em replicar uma landing page de ecommerce feita pelo site da Vtex.
 
-Segue abaixo as instruções para a execução do teste.
+#### Deixei o projeto hospedado no Netlify.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br, joao.victor@econverse.com.br e eduardo.rodrigues@econverse.com.br com o título **Teste Vaga FrontEnd Jr**
+<a href='https://luizfelipe9627-teste-front-end-jr.netlify.app'>Ver o projeto </a>
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+#### Instruções para rodar o projeto
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+```bash
+ # Clone este repositório
+ $ git clone https://github.com/pedrosouz6/teste-front-end-jr
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+ # Acesse a pasta do projeto no terminal/cmd
+ $ cd teste-front-end-jr
 
-**Boa sorte! ;)**
+ # Instale as dependências
+ $ npm install
+
+ # Execute a aplicação em modo de desenvolvimento
+ $ npm run dev
+
+ # O servidor iniciará na porta:5173 
+ $ http://localhost:5173
+```
+
+##
