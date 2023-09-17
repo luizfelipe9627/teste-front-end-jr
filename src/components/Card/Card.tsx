@@ -2,17 +2,23 @@ import React from "react";
 import Button from "../Button/Button";
 import CarouselCard from "./CarouselCard";
 import styles from "./Card.module.scss";
+import Modal from "../Modal/Modal";
 
-interface Product {
+interface CardProps {
   id: number;
   photo: string;
   productName: string;
   descriptionShort: string;
-  price: string;
+  price: number;
+  products: CardProps[];
+}
+
+function formatPrice(price: number) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 export default function Card() {
-  const [data, setData] = React.useState<Product[]>([]);
+  const [data, setData] = React.useState<CardProps[]>([]);
 
   React.useEffect(() => {
     async function fetchProduto(url: string) {
@@ -30,24 +36,47 @@ export default function Card() {
     );
   }, []);
 
-  return (
-    <CarouselCard>
-      {data.map((item, index) => (
-        <div key={index} className={styles.card}>
-          <div className={styles.image}>
-            <img src={item.photo} alt={item.productName} />
-          </div>
+  const [openModal, setOpenModal] = React.useState(false);
+  const [selectedProduct, setSelectedProduct] =
+    React.useState<CardProps | null>(null);
 
-          <div className={styles.info}>
-            <p className={styles.title}>{item.productName}</p>
-            <p className={styles.price}>R$ {item.price}</p>
-            <p className={styles.discountPrice}>R$ {item.price}</p>
-            <p className={styles.installment}>ou 2x de R$49,95 sem juros</p>
-            <p className={styles.delivery}>Frete grátis</p>
-            <Button>Comprar</Button>
+  function handleClick(product: CardProps) {
+    setSelectedProduct(product);
+    setOpenModal(true);
+  }
+
+  return (
+    <>
+      <CarouselCard>
+        {data.map((item, index) => (
+          <div key={index} className={styles.card}>
+            <div className={styles.image}>
+              <img src={item.photo} alt={item.productName} />
+            </div>
+
+            <div className={styles.info}>
+              <p className={styles.title}>{item.productName}</p>
+              <p className={styles.price}>R$ {formatPrice(item.price)}</p>
+              <p className={styles.discountPrice}>R$ {formatPrice(item.price)}</p>
+              <p className={styles.installment}>ou 2x de R$ 49,95 sem juros</p>
+              <p className={styles.delivery}>Frete grátis</p>
+              <Button onClick={() => handleClick(item)}>Comprar</Button>
+            </div>
           </div>
-        </div>
-      ))}
-    </CarouselCard>
+        ))}
+      </CarouselCard>
+
+      {openModal && (
+        <Modal
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          productName={selectedProduct?.productName}
+          productPrice={selectedProduct?.price}
+          productPhoto={selectedProduct?.photo}
+          productDescription={selectedProduct?.descriptionShort}
+          formatPrice={formatPrice}
+        />
+      )}
+    </>
   );
 }
