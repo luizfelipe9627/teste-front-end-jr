@@ -1,0 +1,121 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    display: flex;
+    background-color: #fff;
+    padding: 40px 56px;
+    position: relative;
+
+    .image {
+      margin-right: 87px;
+    }
+
+    .buttonClose {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .content {
+      position: relative;
+
+      .title {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .price {
+        display: block;
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+        margin: 20px 0 17px 0;
+      }
+
+      .description {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        margin: 17px 0 25px 0;
+      }
+
+      .link {
+        font-family: "Lato", sans-serif;
+        color: #041e50;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        letter-spacing: 0.05em;
+      }
+
+      .count {
+        width: 110px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #041e50;
+        border-radius: 1px;
+        margin: 16px 0;
+        padding: 8px 10px;
+
+        .decrease, .increase {
+          display: flex;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+        }
+
+        .amount {
+          max-width: 100%;
+        }
+
+        img {
+          display: initial;
+        }
+      }
+
+      .comprar {
+        width: 245px;
+        height: 44px;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
