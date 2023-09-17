@@ -10,7 +10,7 @@
 
 ```bash
  # Clone este repositório
- $ git clone https://github.com/pedrosouz6/teste-front-end-jr
+ $ git clone https://github.com/luizfelipe9627/teste-front-end-jr
 
  # Acesse a pasta do projeto no terminal/cmd
  $ cd teste-front-end-jr
